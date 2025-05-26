@@ -23,7 +23,6 @@ public class PedidoControler {
 
     @PostMapping
     private ResponseEntity<UUID> insertPedido(@RequestBody PedidoDTO pedidoDTO){
-
         return ResponseEntity.ok(this.rabbitMQService.enviarMensagem(RabbitMQConstates.FILA_PEDIDO, pedidoDTO));
     }
 }
