@@ -45,6 +45,8 @@ Contém os DTOs usados para troca de mensagens entre os serviços, basta abrir o
 - `PedidoStatusDTO`
 - `RabbitMQConstates`
 
+##### OS SERVIÇOS PODEM SER EXECUTADOS EM PARALELO, PRODUCER FUNCIONA NA PORTA 8080 E O CONSUMER NA 8081 ####
+
 ### `pedido-producer` (microserviço) 
 
 - API REST para criar e enviar pedidos para a fila RabbitMQ porta 8080
