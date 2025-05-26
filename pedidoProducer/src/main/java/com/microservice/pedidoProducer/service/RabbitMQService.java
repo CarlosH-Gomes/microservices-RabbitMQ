@@ -31,6 +31,8 @@ public class RabbitMQService {
         } catch (Exception e){
             e.printStackTrace();
         }
+
+        System.out.println("Enviado pedido ID: " + pedidoDTO.getId());
         return pedidoDTO.getId();
     }
 }
